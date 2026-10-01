@@ -1,3 +1,4 @@
+"use strict";
 // ==================================================================
 //  OPGAVE 3 – BYG DIN INTERAKTIVE ZOO
 //  Noget af koden er skrevet for dig. Du skal tilføje, hvor der står ✏️
@@ -23,8 +24,6 @@
 //    script-tag står i <head>.
 
 // ✏️ B. Skriv use strict her ↓
-
-
 
 // ------------------------------------------------------------------
 // STEP 1: Data om dyrene
