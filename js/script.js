@@ -87,7 +87,9 @@ console.log(animalInfo);
 
 // ✏️ Skriv din kode her ↓
 
+const infoboxElement = document.getElementById("infobox")[
 
+];
 
 // ------------------------------------------------------------------
 // STEP 3: Funktion der viser infoboksen
