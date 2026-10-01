@@ -50,21 +50,21 @@
 // ✏️ Skriv dit array her ↓
 
 const animalInfo = [
-  { id: `animal1`, 
+  { className: `animal1`, 
     name: `Simba`,
     species: `lion`,
     age: 5,
     food: `meat`,
   },
 
-  { id: `animal2`, 
+  { className: `animal2`, 
     name: `Dumbo`,
     species: `elephant`,
     age: 8,
     food: `leaves and fruit`,
   },
 
-  { id: `animal3`, 
+  { className: `animal3`, 
     name: `Gerald`,
     species: `Giraffe`,
     age: 6,
@@ -87,9 +87,7 @@ console.log(animalInfo);
 
 // ✏️ Skriv din kode her ↓
 
-const infoboxElement = document.getElementById("infobox")[
-
-];
+const infoboxElement = document.getElementById("infobox");
 
 // ------------------------------------------------------------------
 // STEP 3: Funktion der viser infoboksen
@@ -114,7 +112,6 @@ infoboxElement.classList.add("show");
 
 }
 
-
 // ------------------------------------------------------------------
 // STEP 4: Vis info, når man klikker på et dyr
 // ------------------------------------------------------------------
@@ -130,21 +127,15 @@ animalInfo.forEach(function (animal) {
 
   element.addEventListener("click", function () {
 
-    // ✏️ Navnet er lavet for dig. Tilføj tre linjer under navnet:
-    //      Art: ...
-    //      Alder: ... år
-    //      Føde: ...
-    //    Afslut hver linje med <br> (undtagen den sidste).
     const animalDetails = `
       <strong>${animal.name}</strong><br>
-      
-
-      
+      Species: ${animal.species} <br>
+      Age: ${animal.age} <br>
+      Food: ${animal.food} 
+    
     `;
 
-    // ✏️ Skriv dit funktionskald til funktionen showInfoBox
-    //    med animalDetails her ↓
-
+    showInfoBox(animalDetails);
 
   });
 });
