@@ -49,7 +49,28 @@
 
 // ✏️ Skriv dit array her ↓
 
+const animalInfo = [
+  { id: `animal1`, 
+    name: `Simba`,
+    species: `lion`,
+    age: 5,
+    food: `meat`,
+  },
 
+  { id: `animal2`, 
+    name: `Dumbo`,
+    species: `elephant`,
+    age: 8,
+    food: `leaves and fruit`,
+  },
+
+  { id: `animal3`, 
+    name: `Gerald`,
+    species: `Giraffe`,
+    age: 6,
+    food: `leaves from tall trees`,
+  }
+];
 
 // ✅ Test: Kig i Console – er der 3 dyr?
 console.log(animalInfo);
