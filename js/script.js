@@ -107,12 +107,10 @@ const infoboxElement = document.getElementById("infobox")[
 //       Krølleparenteserne er skrevet for dig – skriv ikke en ny {
 //       (Når du er færdig, må du gerne flytte { op i slutningen
 //       af linjen med funktionshovedet.)
-
+function showInfoBox(text)
 {
-  infoboxElement.innerHTML = text;
-
-  // ✏️ B. Skriv din kode her ↓
-
+infoboxElement.innerHTML = text;
+infoboxElement.classList.add("show");
 
 }
 
